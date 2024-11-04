@@ -174,7 +174,7 @@ public class Baseclass {
 
 	@Parameters({ "browser" })
 	@BeforeMethod
-	public void beforeMethod(String browser, Method method) {
+	public void beforeMethods(String browser, Method method) {
 		methodName.set(method.getName());
 		browserName.set(browser);
 		getBrowser(browser);
